@@ -20,6 +20,7 @@
     "react-spring": "^8.0.27"
   },
   "devDependencies": {
+    "env-cmd": "^10.0.1",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -28,7 +29,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
