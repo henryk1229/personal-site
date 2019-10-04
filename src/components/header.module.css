@@ -22,9 +22,9 @@
 }
 
 .nav-item:hover {
-  color: lightyellow;
+  color: red;
 }
 
 .active-nav-item {
-  color: red;
+  color: black;
 }
