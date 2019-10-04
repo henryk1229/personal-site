@@ -1,10 +1,17 @@
 import React from 'react'
 
+import Layout from '../components/layout'
+
 const AboutPage = () => (
-  <main>
-    <h1>About me</h1>
-    <p>Welcome to my gatsby site.</p>
-  </main>
+  <Layout>
+    <main>
+      <h1>About me</h1>
+      <p>I'm Henry, A software dev</p>
+      <p>
+      Find me on <a href="https://twitter.com/@laszlo_jamf" target="_blank" rel="noopener noreferrer">Twitter!</a>
+       </p>
+    </main>
+  </Layout>
 )
 
 export default AboutPage
