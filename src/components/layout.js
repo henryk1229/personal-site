@@ -1,12 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
+import {useSpring, animated} from 'react-spring'
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -25,11 +19,15 @@ const Layout = ({ children }) => {
     }
   `)
 
+const [fade, set] = useSpring({to: {opacity: 0}})
+
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        <animated.div style={fade}>
+          <div>{children}</div>
+        </animated.div>
       </div>
       <Footer />
     </div>

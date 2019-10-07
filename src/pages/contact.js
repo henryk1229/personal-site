@@ -6,9 +6,9 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <h1>
+      <p>
       Contact Page
-      </h1>
+      </p>
     </Layout>
   )
 }

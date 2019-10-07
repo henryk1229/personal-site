@@ -5,9 +5,9 @@ import Layout from '../components/layout'
 const ProjectPage = () => {
   return (
     <Layout>
-      <h1>
+      <p>
       My Projects
-      </h1>
+      </p>
     </Layout>
   )
 }
