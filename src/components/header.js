@@ -1,21 +1,28 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Img from './image'
+import Img from 'gatsby-image'
 
 import headerStyles from './header.module.css'
 
 const Header = ({ siteTitle }) => {
 
   const data = useStaticQuery(graphql`
-      query {
-       file(relativePath: { eq: "../images/HHKHS19.JPG" }) {
-         childImageSharp {
-           fixed(width: 35, height: 50) {
-             ...GatsbyImageSharpFixed
-           }
-         }
-       }
+      query Headshot {
+        image: file(relativePath: {eq: "headshot.jpg"}) {
+          id
+          childImageSharp {
+            fixed(
+              width: 150
+              height: 200
+            ) {
+              ...GatsbyImageSharpFixed
+            }
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
      }
   `)
 
@@ -26,9 +33,12 @@ const Header = ({ siteTitle }) => {
           {siteTitle}
         </Link>
       </h1>
-      <div className={headerStyles.picture}>
 
-      </div>
+        <Img
+        fixed={data.image.childImageSharp.fixed}
+        alt="headshot"
+        />
+
       <nav>
         <ul className={headerStyles.navList}>
           <li>
