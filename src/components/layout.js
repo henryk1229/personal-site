@@ -19,14 +19,14 @@ const Layout = ({ children }) => {
     }
   `)
 
-const [fade, set] = useSpring({to: {opacity: 0}})
+const animation = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <animated.div style={fade}>
-          <div>{children}</div>
+        <animated.div style={animation}>
+        {children}
         </animated.div>
       </div>
       <Footer />

@@ -28,17 +28,12 @@ const Header = ({ siteTitle }) => {
 
   return(
     <header className={headerStyles.header}>
-      <h1>
-        <Link className={headerStyles.title} to="/">
-          {siteTitle}
-        </Link>
-      </h1>
-
-        <Img
-        fixed={data.image.childImageSharp.fixed}
-        alt="headshot"
-        />
-
+      <div className={headerStyles.textContainer}>
+        <h1>
+          <Link className={headerStyles.title} to="/">
+            {siteTitle}
+          </Link>
+        </h1>
       <nav>
         <ul className={headerStyles.navList}>
           <li>
@@ -81,9 +76,15 @@ const Header = ({ siteTitle }) => {
             Contact
             </Link>
           </li>
-
         </ul>
       </nav>
+      </div>
+      <div className={headerStyles.headshot}>
+        <Img
+        fixed={data.image.childImageSharp.fixed}
+        alt="headshot"
+        />
+      </div>
     </header>
   )
 }
