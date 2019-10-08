@@ -13,8 +13,8 @@ const Header = ({ siteTitle }) => {
           id
           childImageSharp {
             fixed(
-              width: 150
-              height: 200
+              width: 260
+              height: 265
             ) {
               ...GatsbyImageSharpFixed
             }
@@ -36,14 +36,6 @@ const Header = ({ siteTitle }) => {
         </h1>
       <nav>
         <ul className={headerStyles.navList}>
-          <li>
-            <Link
-            className={headerStyles.navItem}
-            activeClassName={headerStyles.activeNavItem}
-            to="/">
-            Home
-            </Link>
-          </li>
           <li>
             <Link
             className={headerStyles.navItem}
@@ -76,15 +68,23 @@ const Header = ({ siteTitle }) => {
             Contact
             </Link>
           </li>
+          <li>
+            <Link
+            className={headerStyles.navItem}
+            activeClassName={headerStyles.activeNavItem}
+            to="/resume">
+            Resume
+            </Link>
+          </li>
         </ul>
       </nav>
       </div>
-      <div className={headerStyles.headshot}>
-        <Img
-        fixed={data.image.childImageSharp.fixed}
-        alt="headshot"
-        />
-      </div>
+        <Link className={headerStyles.headshot} to="/">
+          <Img
+          fixed={data.image.childImageSharp.fixed}
+          alt="headshot"
+          />
+        </Link>
     </header>
   )
 }

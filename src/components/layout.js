@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-const animation = useSpring({ opacity: 1, from: { opacity: 0 } });
+const animation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 400 });
 
   return (
     <div className={layoutStyles.container}>
