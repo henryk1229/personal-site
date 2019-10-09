@@ -19,7 +19,7 @@ const AboutPage = () => (
       <p>
       When I'm not coding or making music, I'm usually reading or doing a crossword.
       Take a look at what's currently on my&nbsp;
-      <a href="https://www.goodreads.com/review/list/103828657-henry-koehler?shelf=currently-reading" target="_blank" rel="noopener noreferrer">bookshelf!</a>
+      <a href="https://www.goodreads.com/user/show/103828657-henry-koehler" target="_blank" rel="noopener noreferrer">bookshelf!</a>
        </p>
     </main>
   </Layout>
