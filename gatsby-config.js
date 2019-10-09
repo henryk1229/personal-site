@@ -52,11 +52,22 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `resume`,
+        path: `${__dirname}/src/resume`
+      }
+    },
+    `gatsby-transformer-pdf`,
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
             family: `Grenze`,
+          },
+          {
+            family: `Montserrat`,
           },
         ],
       },
