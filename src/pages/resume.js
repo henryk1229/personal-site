@@ -23,16 +23,16 @@ const ResumePage = () => {
      }
   `)
 
-  Font.register({ family: 'Montserrat', src: "https://fonts.googleapis.com/css?family=Montserrat&display=swap" });
-
   const styles = StyleSheet.create({
     page: {
       flexDirection: 'row',
       backgroundColor: 'white',
-      fontSize: 12
+      fontSize: 12,
+      flexGrow: 1
     },
     section: {
-      margin: 15
+      margin: 15,
+      flexGrow: 1
     }
   });
 

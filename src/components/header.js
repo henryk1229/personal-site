@@ -15,6 +15,11 @@ const Header = ({ siteTitle }) => {
             fixed(
               width: 260
               height: 265
+              duotone: {
+                highlight: "#ffffff",
+                shadow: "#b3b3b3",
+                opacity: 25
+              }
             ) {
               ...GatsbyImageSharpFixed
             }

@@ -39,10 +39,10 @@ const BlogPage =  () => {
   return (
     <Layout>
       <p>
-      I'm currently migrating my blog posts onto this site.
+      I'm currently migrating my blog posts onto this site. In the meantime, 
       </p>
       <p>
-      In the meantime, please check out my writing on &nbsp;
+      please check out my writing on &nbsp;
       <a href="https://medium.com/@henryk1229" target="_blank" rel="noopener noreferrer">Medium</a>.
       </p>
     </Layout>
