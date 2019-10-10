@@ -13,7 +13,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Grenze', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -216,7 +216,7 @@ html {
 body {
   color: hsla(0, 0%, 0%, 0.8);
   background: hsla(45, 100%, 70%, 0.35);
-  font-family: georgia, serif;
+  font-family: 'ABeeZee', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

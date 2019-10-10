@@ -67,7 +67,7 @@ module.exports = {
             family: `Grenze`,
           },
           {
-            family: `Montserrat`,
+            family: `ABeeZee`,
           },
         ],
       },

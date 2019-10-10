@@ -1,6 +1,7 @@
 import React from 'react'
 import { Document, Page, View, Text, StyleSheet, PDFViewer, PDFDownloadLink, Font } from '@react-pdf/renderer'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import { FaGithub } from 'react-icons/fa'
 import Layout from '../components/layout'
 
 const ResumePage = () => {
@@ -28,19 +29,22 @@ const ResumePage = () => {
     page: {
       flexDirection: 'row',
       backgroundColor: '#ffffe6',
-      fontSize: 12,
-      flexGrow: 1
+      fontSize: 12
     },
     section: {
-      flexGrow: 1,
       margin: 15
     }
   });
 
   //upload resume and use graphql for the query, set document equal to data
-  console.log(data)
+
   return (
     <Layout>
+      <div>
+          <p>
+          Here's a downloadable pdf of my work to-date:
+          </p>
+      </div>
       <PDFViewer width="900px" height="920px">
         <Document
           title={data.resume.childMarkdownRemark.frontmatter.title}
