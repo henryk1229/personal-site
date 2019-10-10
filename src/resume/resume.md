@@ -3,10 +3,6 @@ title: "Henry Koehler's Technical Resume"
 author: "Henry Koehler"
 date: "2019-10-09"
 ---
-HENRY KOEHLER
-
-908-230-2537 | henryk1229@gmail.com | github: henryk1229
-
 Full stack web developer with a passion for great code and adventurous music. With experience in Javascript, React, and Ruby on Rails, and a background in philosophy, I discovered web development through friends, and fell in love with the logic and elegance behind it. I bring strengths in team-building and task-management to help organizations meet deadlines and deliver quality product.
 
 TECHNICAL PROJECTS

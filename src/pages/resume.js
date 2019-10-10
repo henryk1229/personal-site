@@ -1,8 +1,11 @@
 import React from 'react'
-import { Document, Page, View, Text, StyleSheet, PDFViewer, PDFDownloadLink, Font } from '@react-pdf/renderer'
+import { Document, Page, View, Text, StyleSheet, PDFViewer, Font } from '@react-pdf/renderer'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { FaGithub } from 'react-icons/fa'
 import Layout from '../components/layout'
+
+//resume sections
+import Header from '../resume/header'
+import Projects from '../resume/employment'
 
 const ResumePage = () => {
 
@@ -23,11 +26,12 @@ const ResumePage = () => {
      }
   `)
 
+
   const styles = StyleSheet.create({
     page: {
-      flexDirection: 'row',
+      flexDirection: 'column',
       backgroundColor: 'white',
-      fontSize: 12,
+      fontSize: 10,
       flexGrow: 1
     },
     section: {
@@ -53,6 +57,7 @@ const ResumePage = () => {
           creator={data.resume.childMarkdownRemark.frontmatter.author}
         >
           <Page size="Letter" style={styles.page}>
+            <Header />
             <View style={styles.section}>
               <Text>{data.resume.childMarkdownRemark.internal.content}</Text>
             </View>

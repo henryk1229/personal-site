@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => {
               duotone: {
                 highlight: "#ffffff",
                 shadow: "#b3b3b3",
-                opacity: 25
+                opacity: 20
               }
             ) {
               ...GatsbyImageSharpFixed
