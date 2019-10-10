@@ -9,7 +9,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-
 }
 
 .contact-list {
@@ -19,5 +18,13 @@
 }
 
 .contact-item {
-  padding: .35rem;
+  padding: 0 .35rem;
+  font-family: 'Grenze', serif;
+  font-size: 1.25rem;
+}
+
+.tag {
+  padding: 0 .35rem;
+  font-family: 'Grenze', serif;
+  font-size: 1.25rem;
 }

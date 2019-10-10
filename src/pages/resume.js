@@ -28,7 +28,7 @@ const ResumePage = () => {
   const styles = StyleSheet.create({
     page: {
       flexDirection: 'row',
-      backgroundColor: '#ffffe6',
+      backgroundColor: 'white',
       fontSize: 12
     },
     section: {

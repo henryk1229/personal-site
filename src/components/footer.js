@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className={footerStyles.footer}>
-      <p>
+      <p className={footerStyles.tag}>
       Built with Gatsby, © {new Date().getFullYear()}
       </p>
       <ul className={footerStyles.contactList}>
