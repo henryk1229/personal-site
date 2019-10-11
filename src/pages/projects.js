@@ -17,6 +17,9 @@ const ProjectPage = () => {
               link
               author
               date
+              demo
+              frontend
+              backend
             }
             fields {
               slug
@@ -40,8 +43,30 @@ const ProjectPage = () => {
                 className={projectStyles.projectTitle}
                 >{edge.node.frontmatter.title}
               </Link>
-                <div className={projectStyles.content} 
+              <div className={projectStyles.content}>
+                <p>
+                <Link to={edge.node.frontmatter.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Demo
+                </Link>
+                &nbsp;| Github:&nbsp;
+                <Link to={edge.node.frontmatter.frontend}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Frontend
+                </Link>
+                &nbsp;|&nbsp;
+                <Link to={edge.node.frontmatter.backend}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Backend
+                </Link>
+                </p>
+                <div
                 dangerouslySetInnerHTML={{ __html: edge.node.html}}>
+                </div>
               </div>
             </li>
           )
