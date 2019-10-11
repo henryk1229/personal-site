@@ -6,22 +6,26 @@ import Layout from '../components/layout'
 const BlogPage =  () => {
 
   const data = useStaticQuery(graphql`
-      query {
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                title
-              }
-              fields {
-                slug
-              }
+    query {
+      allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog-post"}}}) {
+        edges {
+          node {
+            id
+            frontmatter {
+              type
+              title
+              link
+              author
+              date
+            }
+            fields {
+              slug
             }
           }
         }
       }
-
-    `)
+    }
+  `)
     // comment out  before  migrating posts
     // <h1>Blog</h1>
     // <ol className={blogStyles.posts}>
@@ -39,7 +43,7 @@ const BlogPage =  () => {
   return (
     <Layout>
       <p>
-      I'm currently migrating my blog posts onto this site. In the meantime, 
+      I'm currently migrating my blog posts onto this site. In the meantime,
       </p>
       <p>
       please check out my writing on &nbsp;

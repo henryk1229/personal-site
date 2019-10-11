@@ -1,6 +1,6 @@
 import React from 'react'
 import { Document, Page, View, Text, StyleSheet, PDFViewer, Font } from '@react-pdf/renderer'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 //resume sections

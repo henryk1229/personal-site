@@ -1,6 +1,7 @@
 ---
 title: "React Post"
 date: "2019-10-03"
+type: "blog-post"
 ---
 A post about React!
 

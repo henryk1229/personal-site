@@ -19,8 +19,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `project`,
+        path: `${__dirname}/src/projects`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `headshot`,
         path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `resume`,
+        path: `${__dirname}/src/resume`
       }
     },
     `gatsby-plugin-sharp`,
@@ -52,13 +66,6 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `resume`,
-        path: `${__dirname}/src/resume`
-      }
-    },
     `gatsby-transformer-pdf`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -69,6 +76,9 @@ module.exports = {
           },
           {
             family: `ABeeZee`,
+          },
+          {
+            family: `Montserrat`,
           },
         ],
       },

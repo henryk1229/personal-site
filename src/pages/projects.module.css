@@ -1,0 +1,27 @@
+.projects {
+  list-style-type: none;
+  margin: 0;
+
+}
+
+.project {
+  background: hsla(45, 100%, 70%, 0.04);
+  border-style: solid;
+  border-width: 4px;
+  border-color: hsla(45, 100%, 70%, 0.04);
+  /* box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); */
+  padding: .85rem .55rem 3.5rem;
+  /* margin:  1rem 1rem 3rem; */
+  text-decoration: none;
+}
+
+.project:hover {
+  box-shadow: 0px 30px 40px -10px rgba(0, 0, 0, 0.35);
+}
+.project-title {
+  color: coral;
+  font-family: 'Grenze', serif;
+  font-size: 3.5rem;
+  text-decoration: none;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}

@@ -1,9 +1,11 @@
 const path = require('path')
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-module.exports.onCreateNode = ({ node, actions }) => {
+module.exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === 'MarkdownRemark') {
+   console.log(createFilePath({ node, getNode }))
     const slug = path.basename(node.fileAbsolutePath, '.md')
 
     createNodeField({
@@ -32,7 +34,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   `)
 
   res.data.allMarkdownRemark.edges.forEach(edge => {
-    if (edge.node.fields.slug !== 'resume') {
+      console.log('@@@@@@@@@', edge.node)
       createPage({
         component: blogTemplate,
         path: `/blog/${edge.node.fields.slug}`,
@@ -40,6 +42,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
           slug: edge.node.fields.slug
         }
       })
-    }
+
   })
 }
