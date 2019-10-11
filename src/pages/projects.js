@@ -34,13 +34,15 @@ const ProjectPage = () => {
         {data.allMarkdownRemark.edges.map(edge => {
           return(
             <li className={projectStyles.project}>
-            <Link to={edge.node.frontmatter.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={projectStyles.projectTitle}
-            >{edge.node.frontmatter.title}
-            </Link>
-            <div dangerouslySetInnerHTML={{ __html: edge.node.html}}></div>
+              <Link to={edge.node.frontmatter.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={projectStyles.projectTitle}
+                >{edge.node.frontmatter.title}
+              </Link>
+                <div className={projectStyles.content} 
+                dangerouslySetInnerHTML={{ __html: edge.node.html}}>
+              </div>
             </li>
           )
         })}
