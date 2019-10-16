@@ -18,13 +18,13 @@
   color: hsla(349, 100%, 14%, .8);   /* hsla(13, 100%, 70%, .7) */
   font-size: 5.25rem;
   text-decoration: none;
-  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   margin-left: .2rem;
 }
 
 .title:hover{
-  color: hsla(349, 100%, 14%, .7);
-  /* text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); */
+  color: hsla(349, 100%, 14%, .5);
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .headshot {
@@ -51,6 +51,7 @@
   border-color: hsla(349, 100%, 14%, .1);
   list-style-type: none;
   margin-right: 1.75rem;
+  margin-top: -3rem;
   padding: .7rem 0 0 2.75rem;
 }
 
@@ -59,11 +60,12 @@
   font-size: 1.1rem;
   margin-right: 4.75rem;
   text-decoration: none;
-  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-item:hover {
-  color: hsla(0, 0%, 40%, 1);
+  color: hsla(0, 0%, 40%, .35);
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .active-nav-item {

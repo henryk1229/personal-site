@@ -47,6 +47,7 @@ const ResumePage = () => {
       <div>
           <p>
           Here's a downloadable pdf of my work to-date:
+          
           </p>
       </div>
       <div>

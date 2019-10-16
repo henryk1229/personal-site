@@ -25,7 +25,7 @@ const animation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 400 });
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <animated.div style={animation}>
+        <animated.div className={layoutStyles.children} style={animation}>
         {children}
         </animated.div>
       </div>
