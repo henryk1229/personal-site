@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import projectStyles from './projects.module.css'
 
@@ -23,6 +23,7 @@ const ProjectPage = () => {
             }
             fields {
               slug
+              demoUrl
             }
             html
           }
@@ -30,39 +31,39 @@ const ProjectPage = () => {
       }
     }
   `)
-
+  // console.log(data.allMarkdownRemark.edges)
   return (
     <Layout>
       <ol className={projectStyles.projects}>
         {data.allMarkdownRemark.edges.map(edge => {
           return(
             <li className={projectStyles.project}>
-              <Link to={edge.node.frontmatter.link}
+              <a href={edge.node.frontmatter.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={projectStyles.projectTitle}
                 >{edge.node.frontmatter.title}
-              </Link>
+              </a>
               <div className={projectStyles.content}>
                 <p>
-                <Link to={edge.node.frontmatter.demo}
+                <a href={edge.node.fields.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 >
                 Demo
-                </Link>
+                </a>
                 &nbsp;| Github:&nbsp;
-                <Link to={edge.node.frontmatter.frontend}
+                <a href={edge.node.frontmatter.frontend}
                   target="_blank"
                   rel="noopener noreferrer"
                   >Frontend
-                </Link>
+                </a>
                 &nbsp;|&nbsp;
-                <Link to={edge.node.frontmatter.backend}
+                <a href={edge.node.frontmatter.backend}
                   target="_blank"
                   rel="noopener noreferrer"
                   >Backend
-                </Link>
+                </a>
                 </p>
                 <div
                 dangerouslySetInnerHTML={{ __html: edge.node.html}}>
