@@ -49,6 +49,8 @@ const ResumePage = () => {
           Here's a downloadable pdf of my work to-date:
           </p>
       </div>
+      <div>
+      {typeof window !== 'undefined' &&
       <PDFViewer width="840px" height="920px">
         <Document
           title={data.resume.childMarkdownRemark.frontmatter.title}
@@ -63,7 +65,8 @@ const ResumePage = () => {
             </View>
           </Page>
         </Document>
-      </PDFViewer>
+      </PDFViewer>}
+      </div>
     </Layout>
   )
 }
