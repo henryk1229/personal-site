@@ -49,7 +49,7 @@ const ResumePage = () => {
           Here's a downloadable pdf of my work to-date:
           </p>
       </div>
-      <PDFViewer width="900px" height="920px">
+      <PDFViewer width="840px" height="920px">
         <Document
           title={data.resume.childMarkdownRemark.frontmatter.title}
           author={data.resume.childMarkdownRemark.frontmatter.author}

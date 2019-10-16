@@ -80,6 +80,16 @@ module.exports = {
           {
             family: `Montserrat`,
           },
+          {
+            family: `Josefin Sans`,
+            "variants": [
+              "300",
+    					"400",
+    				],
+          },
+          {
+            family: `Open Sans`,
+          },
         ],
       },
     }
