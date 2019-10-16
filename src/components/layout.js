@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from './footer'
+import SEO from './seo'
 // import "./layout.css"
 import layoutStyles from './layout.module.css'
 
@@ -24,6 +25,7 @@ const animation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 400 });
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
+      <SEO title={data.site.siteMetadata.title}  />
       <Header siteTitle={data.site.siteMetadata.title} />
         <animated.div className={layoutStyles.children} style={animation}>
         {children}
