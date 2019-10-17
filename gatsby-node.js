@@ -7,17 +7,11 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === 'MarkdownRemark') {
    // console.log(createFilePath({ node, getNode }))
     const slug = path.basename(node.fileAbsolutePath, '.md')
-    const demoUrl = node.frontmatter.demo
 
     createNodeField({
       node,
       name: 'slug',
       value: slug
-    })
-    createNodeField({
-      node,
-      name: 'demoUrl',
-      value: demoUrl
     })
   }
 }

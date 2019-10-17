@@ -1,11 +1,11 @@
 import React from 'react'
-import { Document, Page, View, Text, StyleSheet, PDFViewer, Font } from '@react-pdf/renderer'
+import { Document, Page, View, Text, StyleSheet, PDFViewer } from '@react-pdf/renderer'
 import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 //resume sections
 import Header from '../resume/header'
-import Projects from '../resume/employment'
+
 
 const ResumePage = () => {
 
@@ -47,7 +47,7 @@ const ResumePage = () => {
       <div>
           <p>
           Here's a downloadable pdf of my work to-date:
-          
+
           </p>
       </div>
       <div>

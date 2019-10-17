@@ -1,7 +1,7 @@
 ---
 title: "Centered"
 date: "2019-08-02"
-link: "centered-app.netlify.com"
+link: "centered-app.me"
 type: "project"
 demo: "www.youtube.com/watch?v=XYZGbKAFCGw&feature=youtu.be"
 frontend: "www.github.com/henryk1229/centered_frontend"

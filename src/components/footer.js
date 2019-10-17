@@ -1,18 +1,8 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 import { FaLinkedin, FaTwitter, FaGoogle, FaGithub } from 'react-icons/fa';
 import footerStyles from './footer.module.css'
 
 const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata{
-          author
-        }
-      }
-    }
-  `)
 
   return (
     <footer className={footerStyles.footer}>

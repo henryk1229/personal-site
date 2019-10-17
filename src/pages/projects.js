@@ -21,10 +21,6 @@ const ProjectPage = () => {
               frontend
               backend
             }
-            fields {
-              slug
-              demoUrl
-            }
             html
           }
         }
@@ -38,7 +34,7 @@ const ProjectPage = () => {
         {data.allMarkdownRemark.edges.map(edge => {
           return(
             <li className={projectStyles.project}>
-              <a href={edge.node.frontmatter.link}
+              <a href={"https://" + edge.node.frontmatter.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={projectStyles.projectTitle}
@@ -46,20 +42,20 @@ const ProjectPage = () => {
               </a>
               <div className={projectStyles.content}>
                 <p>
-                <a href={edge.node.fields.demoUrl}
+                <a href={"https://" + edge.node.frontmatter.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                Demo
+                Youtube Demo
                 </a>
                 &nbsp;| Github:&nbsp;
-                <a href={edge.node.frontmatter.frontend}
+                <a href={"https://" + edge.node.frontmatter.frontend}
                   target="_blank"
                   rel="noopener noreferrer"
                   >Frontend
                 </a>
                 &nbsp;|&nbsp;
-                <a href={edge.node.frontmatter.backend}
+                <a href={"https://" + edge.node.frontmatter.backend}
                   target="_blank"
                   rel="noopener noreferrer"
                   >Backend

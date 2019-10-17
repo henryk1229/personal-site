@@ -1,31 +1,31 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
-import blogStyles from './blog.module.css'
+// import { Link, graphql, useStaticQuery } from 'gatsby'
+// import blogStyles from './blog.module.css'
 import Layout from '../components/layout'
 
 const BlogPage =  () => {
 
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog-post"}}}) {
-        edges {
-          node {
-            id
-            frontmatter {
-              type
-              title
-              link
-              author
-              date
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog-post"}}}) {
+  //       edges {
+  //         node {
+  //           id
+  //           frontmatter {
+  //             type
+  //             title
+  //             link
+  //             author
+  //             date
+  //           }
+  //           fields {
+  //             slug
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
     // comment out  before  migrating posts
     // <h1>Blog</h1>
     // <ol className={blogStyles.posts}>
