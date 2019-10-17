@@ -1,11 +1,11 @@
 ---
 title: "Centered"
 date: "2019-08-02"
-link: "centered-app.me"
+link: "https://www.centered-app.me"
 type: "project"
-demo: "www.youtube.com/watch?v=XYZGbKAFCGw&feature=youtu.be"
-frontend: "www.github.com/henryk1229/centered_frontend"
-backend: "www.github.com/henryk1229/centered_backend"
+demo: "https://www.youtube.com/watch?v=XYZGbKAFCGw&feature=youtu.be"
+frontend: "https://www.github.com/henryk1229/centered_frontend"
+backend: "https://www.github.com/henryk1229/centered_backend"
 ---
 An immersive app that dynamically generates subtle music and visuals
 
