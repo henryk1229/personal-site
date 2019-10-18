@@ -1,7 +1,7 @@
 ---
 title: "Find Your Brew"
 date: "2019-07-10"
-link: "https://wwww.find-your-brew.netlify.com"
+link: "https://www.find-your-brew.netlify.com"
 type: "project"
 demo: "https://www.youtube.com/watch?v=6le-enTEfTU&feature=youtu.be"
 frontend: "https://www.github.com/speedy012/Find-Your-Brew-Frontend"

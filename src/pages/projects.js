@@ -34,7 +34,7 @@ const ProjectPage = () => {
         {data.allMarkdownRemark.edges.map(edge => {
           return(
             <li className={projectStyles.project}>
-              <p>
+              <p className={projectStyles.projectTitle}>
               {edge.node.frontmatter.title}
               </p>
               <div className={projectStyles.content}>
