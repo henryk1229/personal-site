@@ -39,20 +39,23 @@ const ProjectPage = () => {
               </p>
               <div className={projectStyles.content}>
                 <p>
-                <a href={edge.node.frontmatter.demo}
+                <a className={projectStyles.projectLink}
+                href={edge.node.frontmatter.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 >
                 Youtube Demo
                 </a>
                 &nbsp;| Github:&nbsp;
-                <a href={edge.node.frontmatter.frontend}
+                <a className={projectStyles.projectLink}
+                  href={edge.node.frontmatter.frontend}
                   target="_blank"
                   rel="noopener noreferrer"
                   >Frontend
                 </a>
                 &nbsp;|&nbsp;
-                <a href={edge.node.frontmatter.backend}
+                <a className={projectStyles.projectLink}
+                  href={edge.node.frontmatter.backend}
                   target="_blank"
                   rel="noopener noreferrer"
                   >Backend
