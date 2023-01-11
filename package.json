@@ -26,7 +26,7 @@
     "gatsby-source-medium": "^2.1.9",
     "gatsby-source-rss-feed": "^1.1.1",
     "gatsby-transformer-pdf": "^1.1.14",
-    "gatsby-transformer-remark": "^2.6.27",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.2.19",
     "prop-types": "^15.7.2",
     "react": "^16.10.1",
